@@ -1,8 +1,11 @@
 import 'dart:io';
 
 void main() {
-  print('Сумму в сомах для обмена в Доллары (курс: 88.4): ');
+  print('Введите сумму: ');
   double a = double.parse(stdin.readLineSync()!);
-  double b = a * 88.4;
-  print('$a сом = $b доллар США');
+  print('Введите валюту:');
+  String valuta = stdin.readLineSync()!;
+  print('Введите стоимость валюты');
+  double c = double.parse(stdin.readLineSync()!);
+  print('$a $valuta = ${a * c} сом');
 }
